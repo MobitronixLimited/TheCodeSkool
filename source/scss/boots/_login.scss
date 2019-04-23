@@ -1,0 +1,43 @@
+.btn-primary {
+    font-weight: 800;
+}
+.navbar-brand {
+    background: url("./images/Quickcharge/the-logo.svg") no-repeat no-repeat;
+    text-indent: -9999px;
+    background-size: 200px auto;
+    background-position: center center;
+}
+
+.form-header {
+        padding: 28px 0; text-align:center;background:
+        white;border-radius: 12px 12px 0 0;font-size: 24px;
+        color: #333; font-weight: 600;
+        margin: 0;
+}
+
+.special-bg {
+    background-image: url("./images/bg.png"),
+    url("./images/FrontLightestCloudsLarge.png"),
+    url("./images/PowerlinesLarge.png"),
+    url("./images/MidDarkestCloudsLarge.png"),
+    url("./images/BackMidshadeCloudsLarge.png"),
+    linear-gradient(orange, #f26620);
+    background-repeat: no-repeat, no-repeat, no-repeat,no-repeat, no-repeat, repeat;
+    // background-size: 100vmax 100vmin, 100%, 1310px, 110%, cover;
+    background-position: center bottom, center 150px, center bottom, center center,center center;
+    min-height: 100vh;
+}
+
+/* @media (min-width: 1200px) {
+    .special-bg {
+    }
+} */
+
+
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: .5rem;
+    }
+}

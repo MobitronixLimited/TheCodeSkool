@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Front Page &mdash; Vatebra Energy &mdash;</title>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="noindex, follow" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="special-bg">
+    <main role="main" class="">
+      <div style="padding-top:30px">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-light"
+          style="background-color:transparent !important;"
+        >
+          <div class="container">
+            <a
+              class="navbar-brand"
+              href="#"
+              style="
+        width: 200px;
+        height: 70px;
+    "
+              >Vatebra Energy</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="/">Dashboard</a>
+                <a class="nav-item nav-link" href="/forms">Forms</a>
+                <a class="nav-item nav-link" href="/login"
+                  >Login
+                  <i
+                    data-feather="lock"
+                    style="color:white;width:16px;height:16px"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+
+
+      </div>
+    </main>
+    <script src="/dist/index.js"></script>
+  </body>
+</html>
