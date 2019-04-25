@@ -1,0 +1,63 @@
+---
+layout: special
+title: Reset Password
+---
+
+<div
+  style=""
+>
+  <div class="container" style="padding:10px 0;padding-bottom:40px;">
+    <div class="row">
+        <div
+          class="col-lg-24"
+          style="display:flex;justify-content:center;padding:20px 0"
+        >
+          <a
+            class="navbar-brand"
+            href="{{ site.url }}/"
+            ;
+            style="width: 200px;height: 70px"
+            >{{ site.title }}</a
+          >
+        </div>
+      <div class="col-lg-offset-8 col-lg-8">
+
+        <h3 class="form-header">
+          Password Reset
+        </h3>
+        <div
+          style="background:white;border-radius: 0 0 12px 12px; padding: 20px 40px; padding-bottom:40px;"
+        >
+          {% if error %}
+          <div>{{ error.messageKey }}</div>
+          {% endif %}
+          <form action="" method="post">
+            <div class="form-group">
+              {# <label for="password">Password:</label> #}
+              <input
+                type="password"
+                id="password"
+                name="_password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group">
+              {# <label for="password">Password:</label> #}
+              <input
+                type="password"
+                id="password"
+                name="confirm_password"
+                class="form-control"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Reset
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

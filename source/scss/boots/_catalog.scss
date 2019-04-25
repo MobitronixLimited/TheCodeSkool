@@ -1,0 +1,23 @@
+.catalog {
+    background: white;
+  display: table;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  text-decoration: none;
+  border: 1px solid $gray;
+  border-width: 1px 1px 1px 1px;
+  color: $gray-darker;
+  &:last-child{
+    // border-bottom: 1px solid $gray;
+  }
+  &--item {
+    display: table-cell;
+    width: 60%;
+  }
+  &:hover {
+    background: #06a9f40d;
+    text-decoration: none;
+    color: $gray-darker;
+  }
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Alerts &mdash; Vatebra Energy &mdash;</title>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="noindex, follow" />
+    <link href="/dist/dashboard.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic"
+      rel="stylesheet"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top shadow">
+      <a class="navbar-brand col-md-4" href="/">
+        Vatebra Energy
+      </a>
+      <button
+        id="ham"
+        style="background:none;border:none;padding:19px;cursor: pointer;"
+        class="mr-auto"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Toggle Menu"
+      >
+        <i data-feather="menu" style="color:cadetblue;width: 40px;"></i>
+      </button>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img
+              src="http://placehold.it/30"
+              style="display:inline-block;border-radius:30px;margin:0 5px"
+                />
+            Johnson Doe <span class="caret"></span>
+        </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <a class="dropdown-item" href="#"
+              ><i data-feather="user"></i> View Your Profile</a
+            >
+            <a class="dropdown-item" href="#"
+              ><i data-feather="edit-3"></i> Change Password</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <i data-feather="log-out"></i> Sign Out</a
+            >
+          </div>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-4 sidebar" id="sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link animsition-link" href="/">
+                  <i data-feather="home"></i>
+                  Home <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="more">
+                  <i data-feather="briefcase"></i>
+                  Dashboard
+                  <span style="float:right"
+                    ><i data-feather="chevron-down"></i></span
+                ></a>
+                <ul class="nav flex-column mb-2 sub-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Admin/Vatebra
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Super Dealer
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/dealer">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Dealer
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/subscriber">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Subscriber
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animsition-link" href="/forms">
+                  <i data-feather="compass"></i>
+                  Forms <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animsition-link" href="/modal">
+                  <i data-feather="compass"></i>
+                  Modal
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animsition-link" href="/alerts">
+                  <i data-feather="compass"></i>
+                  Alerts
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="more">
+                  <i data-feather="briefcase"></i>
+                  Level 1
+                  <span style="float:right"
+                    ><i data-feather="chevron-down"></i></span
+                ></a>
+                <ul class="nav flex-column mb-2 sub-nav">
+                  <li class="nav-item">
+                    <a href="#" class="more"
+                      >Level 2
+                      <span style="float:right"
+                        ><i data-feather="chevron-down"></i></span
+                    ></a>
+                    <ul class="nav flex-column mb-2 sub-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/reports">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-file-text"
+                          >
+                            <path
+                              d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                            ></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                          </svg>
+                          Level 3
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/reports">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-file-text"
+                          >
+                            <path
+                              d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                            ></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                          </svg>
+                          Level 3
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/reports">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Level 2
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/reports">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Level 2
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/reports">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Level 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="more">
+                  <i data-feather="briefcase"></i>
+                  Pages
+                  <span style="float:right"
+                    ><i data-feather="chevron-down"></i></span
+                ></a>
+                <ul class="nav flex-column mb-2 sub-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/frontpage">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Front Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Login Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/reset">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Password Reset
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/forgotPassword">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-file-text"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Forgot Password
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link animsition-link" href="/tables">
+                  <i data-feather="database"></i>
+                  Tables <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main
+          role="main"
+          id="main"
+          class="col-lg-20"
+          style="padding: 80px 60px"
+        >
+        {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+    </main>
+      </div>
+    </div>
+    <script src="/dist/vendor.js"></script>
+    <script src="/dist/app.js"></script>
+  </body>
+</html>
